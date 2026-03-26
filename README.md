@@ -110,7 +110,7 @@ RCMamba2Model(
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── notebook.ipynb          # Main Kaggle notebook
