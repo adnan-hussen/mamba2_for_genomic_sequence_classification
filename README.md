@@ -1,10 +1,10 @@
-# 🧬 RC-Equivariant Mamba-2 for Genomic Sequence Classification
+# RC-Equivariant Mamba-2 for Genomic Sequence Classification
 
 A PyTorch/TensorFlow implementation of a **reverse-complement (RC) equivariant Mamba-2** model for DNA sequence classification, benchmarked on the [Genomic Benchmarks](https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks) `demo_human_or_worm` dataset.
 
 ---
 
-## 📋 Overview
+## Overview
 
 This notebook trains a structured state space model (SSM) — based on the **Mamba-2 (SSD)** architecture — to classify genomic DNA sequences. The model incorporates **reverse-complement symmetry** by averaging predictions from both the forward strand and its reverse complement, making it biologically aware of DNA's double-stranded nature.
 
@@ -18,7 +18,7 @@ This notebook trains a structured state space model (SSM) — based on the **Mam
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Input DNA Sequence
@@ -50,7 +50,7 @@ Each block implements a simplified **SSD (Selective State Space Dual)** recurren
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 # Install PyTorch (CUDA 12.1)
@@ -67,7 +67,7 @@ pip install genomic-benchmarks
 
 ---
 
-## 🚀 Usage
+## Usage
 
 Run all cells in the notebook, or execute the training script directly:
 
@@ -83,7 +83,7 @@ This will:
 
 ---
 
-## 📊 Training Results
+## Training Results
 
 | Epoch | Accuracy | Loss |
 |-------|----------|------|
@@ -97,7 +97,7 @@ Training time: ~25s (epoch 1), ~14s/epoch thereafter on GPU.
 
 ---
 
-## 🧪 Model Configuration
+## Model Configuration
 
 ```python
 RCMamba2Model(
@@ -119,7 +119,7 @@ RCMamba2Model(
 
 ---
 
-## 🔬 Background
+## Background
 
 - **Mamba / Mamba-2**: Selective state space models that achieve linear-time sequence modeling. See [Gu & Dao, 2023](https://arxiv.org/abs/2312.00752) and [Dao & Gu, 2024](https://arxiv.org/abs/2405.21060).
 - **RC-Equivariance**: DNA is double-stranded; a model that processes both strands symmetrically is more biologically principled and empirically stronger.
@@ -127,7 +127,7 @@ RCMamba2Model(
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | Package | Version |
 |---|---|
@@ -141,6 +141,6 @@ RCMamba2Model(
 
 ---
 
-## 📄 License
+## License
 
 MIT License. See `LICENSE` for details.
